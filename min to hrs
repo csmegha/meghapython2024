@@ -1,0 +1,3 @@
+min=int(input('enter the min'))
+hrs=min/60
+print(hrs)
