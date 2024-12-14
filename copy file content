@@ -1,0 +1,6 @@
+with open("/content/megha shree.txt", 'r') as source_file:
+    with open('destination_file.txt', 'w') as dest_file:
+        # Read the contents of the source file and write it to the destination file
+        dest_file.write(source_file.read())
+
+print("File contents copied successfully.")
