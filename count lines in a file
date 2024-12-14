@@ -1,0 +1,5 @@
+with open("/content/megha shree.txt", 'r') as file:
+    # Use sum with a generator expression to count lines
+    line_count = sum(1 for line in file)
+
+print(f"The file contains {line_count} lines.")
