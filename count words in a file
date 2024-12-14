@@ -1,0 +1,10 @@
+with open("/content/megha shree.txt", 'r') as file:
+    # Initialize word count
+    word_count = 0
+
+    # Iterate through each line in the file
+    for line in file:
+        # Split the line into words and update the word count
+        word_count += len(line.split())
+
+print(f"The file contains {word_count} words.")
