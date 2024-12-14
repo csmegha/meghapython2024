@@ -1,0 +1,3 @@
+file = open("/content/megha shree.txt","a")
+file.write("this is Megha.\n")
+file.close()
