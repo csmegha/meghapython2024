@@ -1,0 +1,18 @@
+class BankAccount:
+  def __init__(self,account_number,balance):
+    self.account_number=account_number
+    self.balance=balance
+
+  def deposite(self,amount):
+    self.balance+=amount
+    print(f"Deposited {amount}.New balance:{self.balance}")
+
+  def withdraw(self,amount):
+    if amount<=self.balance:
+      self.balance-=amount # Corrected the typo here: changed 'amoun' to 'amount'
+      print(f"withdrew {amount}.New balance:{self.balance}")
+    else:
+      print("insufficient balance")
+account=BankAccount("12345", 0) # Provided an initial balance of 0
+account.deposite(1000)
+account.withdraw(500)
